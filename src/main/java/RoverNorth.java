@@ -9,12 +9,10 @@ public class RoverNorth implements Rover {
     }
 
     public void moveForward() {
-
-
-
+        coordinates.increaseY();
     }
 
     public void moveBackward() {
-
+        coordinates.decreaseY();
     }
 }
