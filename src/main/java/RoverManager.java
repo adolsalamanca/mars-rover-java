@@ -30,4 +30,15 @@ public class RoverManager implements Rover {
     public void moveBackward() {
         rover.moveBackward();
     }
+
+    public Rover turnLeft() {
+        rover = rover.turnLeft();
+        return rover;
+    }
+
+    public Rover turnRight() {
+        rover = rover.turnRight();
+        return rover;
+    }
+
 }

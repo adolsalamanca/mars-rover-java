@@ -18,4 +18,15 @@ public class RoverWestTest {
         Assert.assertEquals(coordinates.getX(), 1);
     }
 
+    @Test
+    public void should_return_a_rover_south_after_turn_left() {
+        Rover roverAfterTurnLeft = rover.turnLeft();
+        Assert.assertEquals(roverAfterTurnLeft.getClass(), RoverSouth.class);
+    }
+
+    @Test
+    public void should_return_a_rover_north_after_turn_right() {
+        Rover roverAfterTurnRight = rover.turnRight();
+        Assert.assertEquals(roverAfterTurnRight.getClass(), RoverNorth.class);
+    }
 }

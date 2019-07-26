@@ -4,4 +4,8 @@ public interface Rover {
 
     void moveBackward();
 
+    Rover turnLeft();
+
+    Rover turnRight();
+
 }

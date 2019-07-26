@@ -1,11 +1,9 @@
 public class RoverSouth implements Rover {
 
     Coordinates coordinates;
-    char direction;
 
-    public RoverSouth(Coordinates coordinates) {
+    RoverSouth(Coordinates coordinates) {
         this.coordinates = coordinates;
-        direction = Direction.SOUTH;
     }
 
     public void moveForward() {
@@ -14,5 +12,13 @@ public class RoverSouth implements Rover {
 
     public void moveBackward() {
         coordinates.increaseY();
+    }
+
+    public Rover turnLeft() {
+        return new RoverEast(coordinates);
+    }
+
+    public Rover turnRight() {
+        return new RoverWest(coordinates);
     }
 }
