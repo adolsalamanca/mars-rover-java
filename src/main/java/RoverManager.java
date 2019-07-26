@@ -1,4 +1,4 @@
-public class RoverManager implements Rover {
+public class RoverManager{
 
     Rover rover;
 
@@ -31,14 +31,12 @@ public class RoverManager implements Rover {
         rover.moveBackward();
     }
 
-    public Rover turnLeft() {
+    public void turnLeft() {
         rover = rover.turnLeft();
-        return rover;
     }
 
-    public Rover turnRight() {
+    public void turnRight() {
         rover = rover.turnRight();
-        return rover;
     }
 
 }
